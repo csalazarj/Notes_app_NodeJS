@@ -21,7 +21,7 @@ router.get("/notes",isAuthenticated, renderNotes);
 
 // edit notes
 router.get("/notes/edit/:id",isAuthenticated, renderEditForm);
-router.put("/notes/edit/:id",isAuthenticated, updateNote); // put es para actualizar
+router.put("/notes/edit/:id",isAuthenticated, updateNote);             // put es para actualizar
 
 // delete notes
 router.delete("/notes/delete/:id",isAuthenticated, deleteNote);
